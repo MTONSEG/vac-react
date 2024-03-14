@@ -14,7 +14,7 @@ module.exports = {
 	entry: './src/index.js',
 	devtool: 'source-map',
 	output: {
-		path: path.resolve(__dirname, './root'),
+		path: path.resolve(__dirname, './dist'),
 		filename: 'js/app.[hash].js',
 		clean: true,
 		publicPath: '/',

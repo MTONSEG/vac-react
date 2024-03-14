@@ -1,0 +1,41 @@
+@import '../../../styles/vars.scss';
+
+.play {
+	width: 53px;
+	height: 53px;
+	background: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	overflow: hidden;
+	transition: all .4s;
+	img {
+		position: absolute;
+		top: 50%;
+		left: 55%;
+		transform: translate(-50%, -50%);
+		width: 21px;
+		height: 21px;
+	}
+	&:hover {
+		transform: translate(-50%, -50%);
+		box-shadow: 0 0 30px $violetColorHover;
+	}
+}
+
+@media (max-width: 767px) {
+	.play {
+		width: 35px;
+		height: 35px;
+		top: 48%;
+		img {
+			width: 13px;
+			height: 13px;
+		}
+	}
+}

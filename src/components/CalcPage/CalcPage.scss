@@ -1,0 +1,10 @@
+.calc-page-margin.calculator {
+	margin: 0 0 40px;
+}
+
+@media (max-width: 767px) {
+	.calc-page-margin.calculator {
+		margin: 0 0 30px;
+	}
+	
+}

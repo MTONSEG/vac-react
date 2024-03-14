@@ -1,0 +1,29 @@
+.nav-btn {
+	width: 53px;
+	height: 53px;
+	border-radius: 100%;
+	background: rgba(116, 130, 255, 0.8);
+	position: absolute;
+	cursor: pointer;
+	transition: all .2s;
+	&:hover {
+		background:rgb(116, 130, 255);
+	}
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 46%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+@media (max-width: 767px) {
+	.nav-btn {
+		width: 35px;
+		height: 35px;
+		&__icon {
+			width: 8.26px;
+			height: 15.53px;
+		}
+	}
+}

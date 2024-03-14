@@ -1,0 +1,41 @@
+.checkbox {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	&:hover + .checkbox__custom {
+		box-shadow: 0 0 5px #000;
+	}
+	&__input {
+		opacity: 0;
+		width: 0.001px;
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+	&__custom {
+		display: block;
+		border: 1px solid #D7D7D7;
+		border-radius: 2px;
+		width: 20px;
+		height: 20px;
+	}
+	&__input:checked + .checkbox__custom{
+		background: url('../../../../assets/icons/check.svg') center /cover no-repeat;
+	}
+
+	&__text {
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+		font-size: 16px;
+		span {
+			display: block;
+			margin: 4px 0 0;
+		}
+	}
+	&__icon {
+		width: 34px;
+		margin: 0 5px 0 0;
+	}
+}

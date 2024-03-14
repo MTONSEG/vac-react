@@ -1,0 +1,93 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: 1680px;
+	background: #fff;
+	z-index: 10;
+	box-shadow: 0px 1px 0px #D7D7D7;
+	&__row,
+	&__buttons,
+	&__right {
+		display: flex;
+		align-items: center;
+	}
+
+	&__row {
+		justify-content: space-between;
+		padding: 17px 0 18px;
+		gap: 15px;
+		position: relative;
+	}
+
+	&__logo {
+		height: 33px;
+		width: 112px;
+	}
+	&__invent {
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 140%;
+		letter-spacing: 0.02em;
+		position: absolute;
+		left: 152px;
+		top: 55%;
+		transform: translateY(-50%);
+	}
+	&__buttons {
+		gap: 20px;
+		margin: 0 63px 0 0;
+	}
+
+	&__inventory-btn {
+		min-width: 137px;
+	}
+	&__request-btn {
+		min-width: 200px;
+		&.apply {
+			min-width: 243px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.header {
+		&__request-btn {
+			min-width: 178px;
+			&.apply {
+				min-width: 236px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.header {
+		min-height: 55px;
+		&__row {
+			padding: 10px 0;
+		}
+		&__logo {
+			width: 81.18px;
+			height: 23.92px;
+		}
+		&__buttons {
+			margin: 0 23px 0 0;
+		}
+		&__request-btn {
+			min-width: 130px;
+			max-height: 35px;
+			&.apply {
+				display: none;
+			}
+		}
+		&__inventory-btn {
+			display: none;
+		}
+		&__invent {
+			display: none;
+		}
+	}
+}

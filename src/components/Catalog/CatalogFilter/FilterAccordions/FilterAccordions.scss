@@ -1,0 +1,68 @@
+.filter-accordion {
+	padding: 11px 19px 7px;
+	& .item-accordion {
+		margin: 0 0 10px;
+		&__title {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 159%;
+			padding: 0 0 0 0;
+			img {
+				right: -4px;
+				top: 40%;		  
+			}
+		}
+		&__text {
+			padding: 0;
+		}
+	}
+	&__model {
+		padding: 20px 0 0;
+	}
+	&__model-item {
+		margin: 0 0 20px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__model-title,
+	&__checkbox,
+	&__mileage-value,
+	&__double-range-value {
+		color: #41456B;
+	}
+	&__model-title {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 14px;
+		margin: 0 0 10px;
+	}
+	&__checkbox {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		&._bold {
+			& .checkbox__text {
+				font-weight: 600;
+			}
+		}
+	}
+	&__mileage-value,
+	&__double-range-value {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 25px;
+	}
+	&__mileage-value {
+		span {
+			color: #606276;
+			display: inline-block;
+			margin: 0 0 0 7px;
+		}
+	}
+	&__double-range-value {
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+	}
+}

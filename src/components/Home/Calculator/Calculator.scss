@@ -1,0 +1,113 @@
+.calculator {
+	margin: 0 0 220px;
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 60px;
+	}
+	&__body {
+		display: flex;
+		gap: 30px;
+		&_card {
+			gap: 50px;
+		}
+	}
+	&__title{
+		max-width: 500px;
+		&_card {
+			max-width: 699px;
+		}
+	}
+	&__text {
+		margin: 10px 0 0 60px;
+		max-width: 599px;
+	}
+	&__range{
+		background: #FFFFFF;
+		box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+		padding: 57px 60px 107px;
+		width: 66.6666%;
+		&_card {
+			width: 54.2%;
+		}
+	}
+	&__payment{
+		width: 30.8333%;
+		box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+		padding: 60px 60px 60px;
+		&_card {
+			width: 41.6%;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.calculator {
+		margin: 0 0 162px;
+		&__text {
+			max-width: 41.5%;
+		}
+		&__body {
+			flex-direction: column;
+			gap: 0;
+			box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+			padding: 37px 40px 40px;
+		}
+		&__range,
+		&__payment {
+			width: 100%;
+			box-shadow: none;
+		}
+		&__title{
+			&_card {
+				max-width: 100%;
+			}
+		}
+		&__range {
+			padding: 0;
+			margin:  0 0 37px;
+		}
+		&__payment {
+			padding: 0 4px 0 0;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.calculator {
+		margin: 0 0 73px;
+		&__head {
+			flex-direction: column;
+			margin: 0 0 28px;
+		}
+		&__text,
+		&__title {
+			max-width: 100%;
+		}
+		&__title {
+			margin: 0 0 10px;
+			&_card {
+				margin: 0 0 1px;
+			}
+		}
+		&__text {
+			margin: 0;
+		}
+		&__body {
+			padding: 20px 20px 20px;
+		}
+		&__range,
+		&__payment {
+			width: 100%;
+			box-shadow: none;
+		}
+		&__range {
+			margin: 0 0 46px;
+		}
+		&__payment{
+			padding: 0;
+		}
+	}
+}

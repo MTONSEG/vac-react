@@ -1,0 +1,56 @@
+.loan-rates {
+	&__credit {
+		margin: 0 0 220px;
+	}
+	&__terms {
+		margin: 0 0 223px;
+	}
+	&__benefits {
+		margin: 0 0 220px;
+	}
+	&__calc {
+		margin: 0 -24px;
+		& .calculator {
+			margin: 0 0 40px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.loan-rates {
+		&__credit,
+		&__terms,
+		&__benefits {
+			max-width: 602px;
+		}
+		&__credit {
+			margin: 0 auto 160px;
+		}
+		&__terms {
+			margin: 0 auto 160px;
+		}
+		&__benefits {
+			margin: 0 auto 163px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.loan-rates {
+		&__credit {
+			margin: 0 auto 83px;
+		}
+		&__terms {
+			margin: 0 auto 82px;
+		}
+		&__benefits {
+			margin: 0 auto 80px;
+		}
+		&__calc {
+			margin: 0 -20px 80px;
+			& .calculator {
+				margin: 0 0 30px;
+			}
+		}
+	}
+}

@@ -1,0 +1,94 @@
+.about {
+	&__mission {
+		margin: 0 0 224px;
+	}
+	&__dream-car {
+		margin: 0 0 223px;
+	}
+	&__transparency {
+		margin: 0 0 220px;
+	}
+	&__best-prices {
+		margin: 0 0 195px;
+	}
+	&__qualified-agents {
+		margin: 0 0 220px;
+	}
+	&__comments {
+		margin: 0 -24px;
+	}
+	&__dynamic-team {
+		margin: 0 0 201px;
+	}
+	&__features {
+		margin: 0 0 220px;
+	}
+	&__calculator {
+		margin: 0 -24px;
+		& .calculator {
+			margin: 0 0 39px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.about {
+		&__mission {
+			margin: 0 0 160px;
+		}
+		&__dream-car {
+			margin: 0 0 150px;
+		}
+		&__transparency {
+			margin: 0 0 161px;
+		}
+		&__best-prices {
+			margin: 0 0 161px;
+		}
+		&__qualified-agents {
+			margin: 0 0 161px;
+		}	
+		&__dynamic-team {
+			margin: 0 0 162px;
+		}
+		&__features {
+			margin: 0 0 163px;
+		}
+	}
+	
+}
+
+@media (max-width: 767px) {
+	.about {
+		&__mission {
+			margin: 0 0 84px;
+		}
+		&__dream-car {
+			margin: 0 0 91px;
+		}
+		&__transparency {
+			margin: 0 0 114px;
+		}
+		&__best-prices {
+			margin: 0 0 83px;
+		}
+		&__qualified-agents {
+			margin: 0 0 80px;
+		}	
+		&__comments {
+			margin: 0 -20px;
+		}	
+		&__dynamic-team {
+			margin: 0 0 81px;
+		}
+		&__features {
+			margin: 0px 0 82px;
+		}
+		&__calculator {
+			margin: 0 -20px;
+			& .calculator {
+				margin: 0 0 30px;
+			}
+		}
+	}
+}

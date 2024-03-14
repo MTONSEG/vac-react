@@ -1,0 +1,37 @@
+@import '../../../styles/vars.scss';
+
+.header-pages {
+	background: url('../../../assets/images/header-pages__bg.svg') 100% 100% no-repeat,$violetColor;
+	padding: 44px 0 36px;
+	margin: 0 0 43px;
+	&__title {
+		padding: 0 4px;
+	}
+}
+
+@media (max-width: 992px) {
+	.header-pages {
+		background: 
+			url('../../../assets/images/header-pages__bg-tab-1.svg') calc(100% - 34px) 0 no-repeat,
+			url('../../../assets/images/header-pages__bg-tab-2.svg') 100% 100% no-repeat, 
+			$violetColor;
+		&__title {
+			padding: 0;
+		}
+	}
+}
+
+
+@media (max-width: 767px) {
+	.header-pages {
+		padding: 12px 0 8px;
+		background: $violetColor;
+		margin: 0 0 33px;
+		height: 116px;
+		& .container {
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+	}
+}

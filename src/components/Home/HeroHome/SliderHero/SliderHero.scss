@@ -1,0 +1,65 @@
+@import '../../../../styles/vars.scss';
+
+.slider-hero {
+	position: relative;
+	padding: 0 53px;
+	&__slide-image {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 490px;
+	}
+
+	&__btn {
+		width: 53px;
+		height: 53px;
+		background: rgba(255, 255, 255, 0.8);
+		position: absolute;
+		top: 48%;
+		transform: translateY(-50%);
+		z-index: 5;
+		border-radius: 100%;
+		&_prev {
+			left: 0;
+		}
+		&_next {
+			right: 0;
+		}
+		&:hover {
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.267);
+		}
+	}
+
+	&__icon-btn {
+		position: absolute;
+		width: 13px;
+		height: 23px;
+		top: 52%;
+		left: 47%;
+		transform: translate(-50%, -50%);
+		&._rotate {
+			transform: translate(-50%, -50%) rotate(180deg);
+			top: 50%;
+			left: 53%;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.slider-hero {
+		margin: 0 0 62px;
+	}
+}
+
+@media (max-width: 767px) {
+	.slider-hero {
+		padding: 0 25px;
+		margin: 0 0 39px;
+		&__btn {
+			width: 35px;
+			height: 35px;
+		}
+		&__slide-image {
+			aspect-ratio: 490/240;
+		}
+	}
+}
